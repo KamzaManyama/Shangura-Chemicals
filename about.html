@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="icon" href="src/images/icon.png">
+  <title>About Us - Shangura Chemicals</title>
+  <meta name="description" content="Learn about Shangura Chemicals - a 100% black-owned, Level 1 B-BBEE chemical supplier committed to quality, reliability and innovation across Africa.">
+  <script src="src/javascript/TailwinDcOLORcONFIG.JS" defer></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="src/styles/AboutPage.css">
+
+  <!-- Google Fonts (Poppins + Inter) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body class="font-body bg-white text-gray-800 antialiased">
+
+  <!-- Top Navigation -->
+  <header class="sticky top-0 z-50 bg-white backdrop-blur-sm border-b border-gray-100 shadow-sm">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <a href="index.html" class="flex items-center gap-3">
+          <div>
+            <img src="src/images/1756460904897blob-removebg-preview.png" alt="Shangura Chemicals Logo" class="h-10 w-auto" />
+          </div>
+        </a>
+
+        <nav class="hidden lg:flex items-center gap-8 text-sm font-medium">
+          <a href="#Home" class="text-gray-700 hover:text-primary-600 transition-colors">Home</a>
+          <a href="#companyOverView" class="text-gray-700 hover:text-primary-600 transition-colors">About</a>
+          <a href="#Leadership" class="text-gray-700 hover:text-primary-600 transition-colors">Leadership</a>
+          <a href="#guide" class="text-gray-700 hover:text-primary-600 transition-colors">Guide</a>
+          <a href="#FAQ" class="text-gray-700 hover:text-primary-600 transition-colors">FAQs</a>
+        </nav>
+
+        <div class="flex items-center gap-3">
+          <button onclick="openQuote()" class="hidden md:inline-flex items-center gap-2 btn-primary px-5 py-2.5 rounded-lg text-sm font-semibold transition-all">
+            Request Quote
+          </button>
+          <button id="mobileMenuBtn" class="lg:hidden p-2 rounded-md border border-gray-200 text-gray-600 hover:text-primary-600">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Banner -->
+  <section id="Home" class="hero-bg text-white py-24 h-[65dvh] flex items-center ">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 text-center">
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-6">About Shangura Chemicals</h1>
+      <p class="text-xl text-gray-100 max-w-3xl mx-auto">Your Trusted Partner in Chemical Solutions Across Africa</p>
+    </div>
+  </section>
+
+  <!-- Company Overview -->
+  <section id="companyOverView" class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="text-3xl font-heading font-bold text-primary-800 mb-6">Who We Are</h2>
+          <p class="text-gray-600 mb-4">Shangura Chemicals (Pty) Ltd is a 100% black-owned, Level 1 B-BBEE chemical manufacturing and supply company with a commitment to excellence, innovation, and transformative industrial solutions.</p>
+          <p class="text-gray-600 mb-4">Founded with a vision to revolutionize chemical production in South Africa, we specialize in developing proprietary formulations that meet the unique challenges of African industries while maintaining global quality standards.</p>
+          <p class="text-gray-600 mb-6">Our state-of-the-art manufacturing facilities and rigorous quality control processes ensure that every product bearing the Shangura name delivers consistent performance, reliability, and value to our clients across multiple sectors.</p>
+          
+          <div class="grid grid-cols-2 gap-4 mb-6">
+            <div class="flex items-center gap-3">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary-600" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              <span class="text-sm">Chemical Manufacturing</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary-600" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              <span class="text-sm">R&D Innovation</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary-600" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              <span class="text-sm">Custom Formulations</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary-600" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              <span class="text-sm">African Solutions</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="relative">
+          <div class="overflow-hidden rounded-xl bg-gradient-to-br from-primary-800 to-primary-900 h-96 flex items-center justify-center">
+            <img src="https://images.pexels.com/photos/32399141/pexels-photo-32399141.jpeg" alt="Shangura Chemicals manufacturing facility" class="w-full h-full object-cover" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Leadership -->
+  <section id="Leadership" class="py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-heading font-bold text-primary-800 mb-4">Our Leadership Team</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">Experienced professionals driving innovation and excellence in chemical manufacturing</p>
+      </div>
+      
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- CEO -->
+        <div class="bg-white rounded-xl overflow-hidden shadow-sm border border-[#fbbf24]">
+          <div class="h-auto bg-primary-100 flex items-center justify-center">
+            <img src="src/images/demoAdmin.jpg" alt="Profile image" class="h-auto w-full object-contain" />
+        </div>
+
+          <div class="p-6">
+            <h3 class="font-heading font-bold text-xl text-primary-800 mb-1">Hlabirwa Mashabela</h3>
+            <p class="text-primary-600 font-medium mb-4">Chief Executive Officer</p>
+            <p class="text-gray-600 text-sm">Strategic vision and leadership with extensive experience in chemical manufacturing and business development.</p>
+          </div>
+        </div>
+        
+        <!-- Technical Director -->
+        <div class="bg-white rounded-xl overflow-hidden shadow-sm border border-[#fbbf24]">
+          
+          <div class="h-auto bg-primary-100 flex items-center justify-center">
+            <img src="src/images/demoAdmin.jpg" alt="Profile image" class="h-auto w-full object-contain" />
+        </div>
+          <div class="p-6">
+            <h3 class="font-heading font-bold text-xl text-primary-800 mb-1">Dr. Sarah Moloi</h3>
+            <p class="text-primary-600 font-medium mb-4">Technical Director</p>
+            <p class="text-gray-600 text-sm">PhD in Chemical Engineering with 15+ years experience in formulation development and process optimization.</p>
+          </div>
+        </div>
+        
+        <!-- Operations Manager -->
+        <div class="bg-white rounded-xl overflow-hidden shadow-sm border border-[#fbbf24]">
+          
+          <div class="h-auto bg-primary-100 flex items-center justify-center">
+            <img src="src/images/demoAdmin.jpg" alt="Profile image" class="h-auto w-full object-contain" />
+        </div>
+          <div class="p-6">
+            <h3 class="font-heading font-bold text-xl text-primary-800 mb-1">Thomas Nkosi</h3>
+            <p class="text-primary-600 font-medium mb-4">Operations Manager</p>
+            <p class="text-gray-600 text-sm">Expert in supply chain management and production optimization with focus on quality and efficiency.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+    <!-- Stats Banner -->
+    <section class="bg-black py-12">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <div class="text-2xl md:text-3xl font-bold text-white mb-2">2017</div>
+                    <div class="text-white text-sm uppercase tracking-wide">Year Established</div>
+                </div>
+                <div>
+                    <div class="text-2xl md:text-3xl font-bold text-white mb-2">50+</div>
+                    <div class="text-white text-sm uppercase tracking-wide">Products Developed</div>
+                </div>
+                <div>
+                    <div class="text-2xl md:text-3xl font-bold text-white mb-2">20+</div>
+                    <div class="text-white text-sm uppercase tracking-wide">Industries Served</div>
+                </div>
+                <div>
+                    <div class="text-2xl md:text-3xl font-bold text-white mb-2">100+</div>
+                    <div class="text-white text-sm uppercase tracking-wide">Clients Across Africa</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  <!-- Mission, Vision & Values -->
+  <section id="guide" class="py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-heading font-bold text-primary-800 mb-4">Our Guiding Principles</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">The foundation of everything we do at Shangura Chemicals</p>
+      </div>
+      
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Mission -->
+        <div class="bg-white p-8 rounded-xl shadow-sm border border-[#fbbf24] text-center">
+          <div class="w-16 h-16 rounded-full bg-primary-100 flex items-center justify-center text-primary-600 mx-auto mb-6">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+          </div>
+          <h3 class="font-heading font-bold text-xl text-primary-800 mb-4">Our Mission</h3>
+          <p class="text-gray-600">To develop and manufacture innovative chemical solutions that address Africa's unique industrial challenges while creating sustainable value for our stakeholders and communities.</p>
+        </div>
+        
+        <!-- Vision -->
+        <div class="bg-white p-8 rounded-xl shadow-sm border border-[#fbbf24] text-center">
+          <div class="w-16 h-16 rounded-full bg-primary-100 flex items-center justify-center text-primary-600 mx-auto mb-6">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+            </svg>
+          </div>
+          <h3 class="font-heading font-bold text-xl text-primary-800 mb-4">Our Vision</h3>
+          <p class="text-gray-600">To be Africa's leading chemical manufacturer, recognized for innovation, quality, and our commitment to sustainable industrial development across the continent.</p>
+        </div>
+        
+        <!-- Values -->
+        <div class="bg-white p-8 rounded-xl shadow-sm border border-[#fbbf24] text-center">
+          <div class="w-16 h-16 rounded-full bg-primary-100 flex items-center justify-center text-primary-600 mx-auto mb-6">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+            </svg>
+          </div>
+          <h3 class="font-heading font-bold text-xl text-primary-800 mb-4">Our Values</h3>
+          <div class="space-y-3 text-gray-600 text-left">
+            <div class="flex items-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary-600" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              <span>Innovation & Excellence</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary-600" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              <span>Integrity & Transparency</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary-600" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              <span>Sustainability & Responsibility</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary-600" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              <span>Customer-Centric Solutions</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- FAQs Section -->
+<section id="FAQ" class="py-16 bg-gray-100">
+    <div class="max-w-4xl mx-auto px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-heading font-bold text-primary-800 mb-4">Frequently Asked Questions</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto">Find answers to common questions about Shangura Chemicals</p>
+        </div>
+        <div class="space-y-6">
+            <div class="bg-white rounded-lg shadow-sm border border-[#fbbf24] p-6">
+                <button class="w-full text-left flex justify-between items-center font-semibold text-primary-800 focus:outline-none faq-toggle">
+                    <span>What products does Shangura Chemicals offer?</span>
+                    <svg class="h-5 w-5 text-primary-600 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                    </svg>
+                </button>
+                <div class="mt-3 text-gray-600 text-sm faq-content hidden">
+                    We offer a wide range of chemical products for mining, water treatment, agriculture, manufacturing, pharmaceuticals, and construction. Please see our Products section or contact us for more details.
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-sm border border-[#fbbf24] p-6">
+                <button class="w-full text-left flex justify-between items-center font-semibold text-primary-800 focus:outline-none faq-toggle">
+                    <span>Are your products certified for quality?</span>
+                    <svg class="h-5 w-5 text-primary-600 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                    </svg>
+                </button>
+                <div class="mt-3 text-gray-600 text-sm faq-content hidden">
+                    Yes, Shangura Chemicals is ISO 9001 certified and all our products undergo rigorous quality control to ensure they meet industry standards.
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-sm border border-[#fbbf24] p-6">
+                <button class="w-full text-left flex justify-between items-center font-semibold text-primary-800 focus:outline-none faq-toggle">
+                    <span>How can I request a quote?</span>
+                    <svg class="h-5 w-5 text-primary-600 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                    </svg>
+                </button>
+                <div class="mt-3 text-gray-600 text-sm faq-content hidden">
+                    You can request a quote by clicking the "Request Quote" button at the top of the page or by emailing us at info@shangurachemicals.co.za.
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-sm border border-[#fbbf24] p-6">
+                <button class="w-full text-left flex justify-between items-center font-semibold text-primary-800 focus:outline-none faq-toggle">
+                    <span>Do you provide technical support?</span>
+                    <svg class="h-5 w-5 text-primary-600 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                    </svg>
+                </button>
+                <div class="mt-3 text-gray-600 text-sm faq-content hidden">
+                    Yes, our technical team is available to assist with product selection, application guidance, and troubleshooting.
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-sm border border-[#fbbf24] p-6">
+                <button class="w-full text-left flex justify-between items-center font-semibold text-primary-800 focus:outline-none faq-toggle">
+                    <span>Where are you located and do you deliver nationwide?</span>
+                    <svg class="h-5 w-5 text-primary-600 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                    </svg>
+                </button>
+                <div class="mt-3 text-gray-600 text-sm faq-content hidden">
+                    We are based in Kempton Park, Johannesburg, and deliver our products throughout South Africa and neighboring countries.
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <!-- Footer -->
+   <footer class="pt-16 pb-8 bg-black">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12 text-white">
+      <!-- Brand & Social -->
+      <div class="flex flex-col">
+        <h4 class="font-bold text-lg mb-6">Shangura Chemicals</h4>
+        <p class="mb-6">
+          Reliable, high-quality chemical solutions for South Africa and the SADC region. 100% black-owned. Level 1 B-BBEE.
+        </p>
+        <div class="flex space-x-4">
+          <a href="https://www.linkedin.com/company/shangura-chemicals/" target="_blank" rel="noopener" class="hover:text-accent-400 transition">
+            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.5 11.268h-3v-5.604c0-1.337-.025-3.063-1.868-3.063-1.87 0-2.156 1.46-2.156 2.969v5.698h-3v-10h2.881v1.367h.041c.401-.761 1.381-1.563 2.844-1.563 3.042 0 3.604 2.002 3.604 4.604v5.592z"/>
+            </svg>
+          </a>
+          <a href="mailto:info@shangurachemicals.co.za" class="hover:text-accent-400 transition">
+            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 2v.01L12 13 4 6.01V6h16zm-16 12V8.99l7.99 6.99c.39.34.99.34 1.38 0L20 8.99V18H4z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Company Links -->
+      <div class="flex-col align-center mb-4">
+        <h4 class="font-bold text-lg mb-6">Company</h4>
+        <ul class="space-y-3">
+          <li><a href="#companyOverView" class="hover:text-accent-400 transition">About Us</a></li>
+          <li><a href="#Leadership" class="hover:text-accent-400 transition">Leadership</a></li>
+          <li><a href="#guide" class="hover:text-accent-400 transition">Guide</a></li>
+          <li><a href="#FAQ" class="hover:text-accent-400 transition">FAQs</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="flex flex-col mb-4">
+        <h4 class="font-bold text-lg mb-6">Contact Info</h4>
+        <div class="space-y-4 text-sm text-white">
+          <div class="flex items-center gap-3">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary-600" viewBox="0 0 20 20" fill="currentColor">
+              <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+              <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+            </svg>
+            <span>info@shangurachemicals.co.za</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary-600" viewBox="0 0 20 20" fill="currentColor">
+              <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+            </svg>
+            <span>011 366 2593</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary-600" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
+            </svg>
+            <span>Kempton Park, Johannesburg, South Africa</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="border-t border-white pt-6">
+      <div class="flex flex-col md:flex-row mb-6 items-center">
+        <p class="text-white text-sm mb-4 md:mb-0">
+            © <span id="footerYear"></span> Shangura Chemicals. All rights reserved.
+            <script>
+            document.getElementById('footerYear').textContent = new Date().getFullYear();
+            </script>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<!--===============================================================================================================================-->
+<!-- page scripts -->
+<!--===============================================================================================================================-->
+
+  <script src="/src/javascript/TopNav.js"></script>
+
+<!--===============================================================================================================================-->
+<!--===============================================================================================================================-->
+
+</body>
+</html>

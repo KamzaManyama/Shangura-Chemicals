@@ -1,0 +1,41 @@
+html {
+      scroll-behavior: smooth;
+    }
+    
+    .btn-primary { 
+      background: #84cc16; 
+      color: white;
+      transition: all 0.3s ease;
+    }
+    .btn-primary:hover { 
+      background: #65a30d;
+      transform: translateY(-2px); 
+      box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+    }
+    
+    .maintenance-illustration {
+      filter: grayscale(100%) opacity(0.7);
+      mix-blend-mode: luminosity;
+    }
+    
+    .progress-bar {
+      height: 6px;
+      background-color: #ecfccb;
+      border-radius: 3px;
+      overflow: hidden;
+      margin-top: 1rem;
+    }
+    
+    .progress-value {
+      height: 100%;
+      background-color: #84cc16;
+      border-radius: 3px;
+      animation: progressAnimation 1.5s ease-in-out infinite alternate;
+    }
+    
+    @keyframes progressAnimation {
+      0% { width: 30%; }
+      100% { width: 70%; }
+    }
+
+    

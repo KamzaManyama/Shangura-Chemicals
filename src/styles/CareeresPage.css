@@ -1,0 +1,64 @@
+  .sticky-aside {
+            position: sticky;
+            top: 2rem;
+            max-height: 80vh;
+            overflow-y: auto;
+        }
+        .job-item {
+            transition: all 0.3s ease;
+        }
+        .job-item.active, .job-item:hover {
+            background-color: #eff6ff;
+            border-color: #fbbf24;
+        }
+        .job-details {
+            display: none;
+        }
+        .job-details.active {
+            display: block;
+        }
+        .scrollbar-thin::-webkit-scrollbar {
+            width: 6px;
+        }
+        .scrollbar-thin::-webkit-scrollbar-thumb {
+            background-color: #cbd5e1;
+            border-radius: 3px;
+        }
+
+        .glass { background: rgba(255,255,255,0.03); backdrop-filter: blur(6px); }
+    .accent-glow { box-shadow: 0 8px 30px rgba(132, 204, 22, 0.15); }
+    .btn-primary { 
+      background: #84cc16; 
+      color: white;
+      transition: all 0.3s ease;
+    }
+    .btn-primary:hover { 
+      background: #65a30d;
+      transform: translateY(-2px); 
+      box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+    }
+    .careers-hero-bg {
+      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                  url('/src/images/bgimage1.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+    .trust-chip {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .sticky-aside {
+      position: sticky;
+      top: 100px;
+    }
+    .job-item {
+      transition: all 0.2s ease;
+    }
+    .job-item:hover, .job-item.active {
+      background-color: #f7fee7;
+      border-left: 4px solid #fbbf24;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
