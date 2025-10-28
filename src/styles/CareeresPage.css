@@ -39,7 +39,7 @@
     }
     .careers-hero-bg {
       background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
-                  url('/src/images/vector.png');
+                  url('../images/vector.png');
       background-size: cover;
       background-position: center;
     }
