@@ -519,7 +519,7 @@
   <div class="absolute inset-0 bg-black/50" onclick="closeDrawer()"></div>
   <aside class="absolute right-0 top-0 h-full w-full sm:w-[420px] bg-white shadow-2xl p-6 overflow-y-auto">
     <div class="flex items-center justify-between mb-6">
-      <div id="drawerTitle" class="font-semibold text-lg text-primary-800">Product Details</div>
+      <div class="font-semibold text-lg text-primary-800">Product Details</div>
       <button onclick="closeDrawer()" class="p-2 rounded-md border border-gray-300 text-gray-600 hover:text-primary-700 hover:border-primary-400 transition-colors">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
           <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" />
@@ -527,18 +527,31 @@
       </button>
     </div>
 
-    <div id="drawerContent" class="space-y-4">
-      <!-- Product Image -->
-      <img id="drawerImage" src="" alt="" class="w-full h-48 object-cover rounded-lg shadow-sm" />
+    <div id="drawerContent" class="space-y-6">
+      <div>
+        <h2 id="drawerTitle" class="font-bold text-2xl text-primary-800 mb-2">Product Title</h2>
+        <p id="drawerDescription" class="text-gray-700 text-sm leading-relaxed mb-3"></p>
+        <img id="drawerImage" src="" alt="" class="w-full h-52 object-cover rounded-lg shadow-sm border border-gray-200" />
+      </div>
 
-      <!-- Product Description -->
-      <p id="drawerDescription" class="text-gray-700 text-sm leading-relaxed"></p>
+      <div>
+        <h3 class="font-semibold text-lg text-primary-800 border-b pb-1">Additional Information</h3>
+        <p id="drawerExtra" class="text-gray-600 text-sm mt-2"></p>
+      </div>
 
-      <!-- Product Extra Info -->
-      <div id="drawerExtra" class="text-gray-600 text-sm"></div>
+      <div>
+        <h3 class="font-semibold text-lg text-primary-800 border-b pb-1">Product Specifications</h3>
+        <div id="drawerSpecs" class="text-gray-600 text-sm mt-2"></div>
+      </div>
+
+      <div>
+        <h3 class="font-semibold text-lg text-primary-800 border-b pb-1">Product Uses</h3>
+        <ul id="drawerUses" class="list-disc list-inside text-gray-600 text-sm space-y-1 mt-2"></ul>
+      </div>
     </div>
   </aside>
 </div>
+
 
 <!--===============================================================================================================================-->
 <!--                                                          page scripts                                                        -->
