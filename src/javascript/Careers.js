@@ -69,7 +69,6 @@
                 
                 jobItem.innerHTML = `
                     <h4 class="font-medium">${job.title}</h4>
-                    <p class="text-sm text-gray-600">${job.location}</p>
                 `;
                 
                 jobItem.addEventListener('click', () => {
